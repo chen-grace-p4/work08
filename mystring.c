@@ -15,8 +15,13 @@ char* mystrcpy(char* dest, char* source) {
 	return dest;
 }
 
-//char* mystrncpy(char* dest, char*source, int n) {
-//}
+char* mystrncpy(char* dest, char*source, int n) {
+	int i;
+	for (i = 0; (i < n) && *(source+i) != '\0'; i++) {
+		*(dest+i) = *(source+i);
+	}
+	return dest;
+}
 
 int mystrcmp(char* s1, char* s2) {
 	return 0;
