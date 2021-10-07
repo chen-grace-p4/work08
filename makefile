@@ -1,8 +1,8 @@
-all: main.o work08.o
-	gcc -o work08 main.o work08.o
+all: main.o mystring.o
+	gcc -o mystring main.o mystring.o
 
-main.o: main.c work08.h
+main.o: main.c mystring.h
 	gcc -c main.c
 
-euler.o: work08.c work08.h
-	gcc -c work08.c
+euler.o: mystring.c mystring.h
+	gcc -c mystring.c

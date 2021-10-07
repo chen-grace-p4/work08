@@ -8,10 +8,9 @@ int mystrlen(char* s) {
 }
 
 char* mystrcpy(char* dest, char* source) {
-	while (*source) {
-		*(dest) = *(source);
-		dest++;
-		source++;
+	int i;
+	for (i = 0; *(source+i) != '\0'; i++) {
+		*(dest+i) = *(source+i);
 	}
 	return dest;
 }
