@@ -4,5 +4,11 @@ all: main.o mystring.o
 main.o: main.c mystring.h
 	gcc -c main.c
 
-euler.o: mystring.c mystring.h
+mystring.o: mystring.c mystring.h
 	gcc -c mystring.c
+
+run:
+	./mystring
+	
+clean:
+	rm *.o
